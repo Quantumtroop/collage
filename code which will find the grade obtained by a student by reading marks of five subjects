@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main() {
+    int a, b, c, d, e, f;
+    printf("Enter grade of 5 subjects: ");
+    scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
+    f = (a + b + c + d + e) / 5;
+
+    if (f >= 90) {
+        printf("Grade A\n");
+    } else if (f >= 80 && f < 90) {
+        printf("Grade B\n");
+    } else if (f >= 70 && f < 80) {
+        printf("Grade C\n");
+    } else if (f >= 50 && f < 70) {
+        printf("Grade D\n");
+    } else if (f >= 36 && f < 50) {
+        printf("Grade E\n");
+    } else {
+        printf("You are Fail\n");
+    }
+
+    return 0;
+}
