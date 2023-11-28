@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,i=1,j=1;
+    printf("enter the number\n");
+    scanf("%d",&a);
+    printf("enter the power\n");
+    scanf("%d",&b);
+    while(i<=b)
+    {
+        j=a*j;
+        i++;
+    }
+    printf("the result is %d", j);
+    return 0;
+
+}
